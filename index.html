@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+ 
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <header>
+    <h1>
+      <span>ROCK</span>
+      <span>PAPER</span>
+      <span>SCISSORS</span>
+      <span>LIZARD</span>
+      <span>SPOCK</span>
+    </h1>
+    <div class="score-bar">
+      <span>SCORE</span>
+      <span id="score">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="options">      
+      <button class="button button-rock" data-choice="rock">
+        <div class="img-container">
+        <img src="./images/icon-rock.svg" class="rock-btn" alt="rock-icon">
+         </div>
+      </button>
+      <button class="button button-paper" data-choice="paper">
+        <div class="img-container">
+        <img src="./images/icon-paper.svg" class="paper-btn" alt="paper-icon">
+        </div>
+      </button>
+      <button class="button button-scissors" data-choice="scissors">
+        <div class="img-container">
+        <img src="./images/icon-scissors.svg" class="scissors-btn" alt="scissors-icon">
+      </div>
+      </button>
+      <button class="button button-lizard" data-choice="lizard">
+        <div class="img-container">
+        <img src="./images/icon-lizard.svg" class="lizard-btn" alt="lizard-icon">
+      </div>
+      </button>
+      <button class="button button-spock" data-choice="spock">
+        <div class="img-container">
+        <img src="./images/icon-spock.svg" class="spock-btn" alt="spock-icon">
+        </section>
+      </button>
+    </div> 
+    
+    <section class="fight">
+      <div class="pick" id="human-choice">
+        <span>YOU PICK </span>
+      </div>
+
+      <div class="game-info">
+        <span class="result-info">YOU LOSE</span>
+        <button class="play-again">PLAY AGAIN</button> 
+      </div>
+
+      <div class="pick" id="computer-choice">
+        <span>THE HOUSE PICKED </span>       
+      </div>      
+    </section> 
+  </main>
+  <footer>
+    <button class="rules-btn">
+      RULES
+    </button>
+    <div class="pop-up-rules">
+      <span>RULES</span>
+      <span class="close-pop-up">&#10006</span>
+      <img src="./images/image-rules-bonus.svg">      
+    </div>
+  </footer>
+  <audio id="sound" src="./audio/beep.mp3" preload="auto" >
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  
+<script src="./main.js"></script>
+
+</body>
+</html>
